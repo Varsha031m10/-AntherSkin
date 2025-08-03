@@ -1,0 +1,74 @@
+/* src/components/Haircare.css */
+
+.haircare-container h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 28px;
+    color: #333;
+    font-family: 'Cormorant Garamond', 'Garamond', serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+  
+
+.haircare-products {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Space products equally */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.product {
+    flex: 1; /* Allow products to grow and fill space */
+    max-width: 30%; /* Limit the maximum width of each product */
+    margin: 10px; /* Add spacing between products */
+    text-align: center; /* Center product text */
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+}
+
+.product-image {
+    width: 100%; /* Ensure images are responsive */
+    height: auto; /* Keep aspect ratio */
+}
+.haircare-banner {
+    display: block;
+    margin: 20px auto;
+    max-width: 80%;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .add-button-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .add-feedback {
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    background-color: #ff69b4;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 7px;
+    border-radius: 50%;
+    animation: fadeCart 0.7s ease-out forwards;
+  }
+  
+  @keyframes fadeCart {
+    0% {
+      opacity: 0;
+      transform: scale(0.5) translateY(-10px);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.2) translateY(-20px);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1) translateY(-30px);
+    }
+  }
+  
+  

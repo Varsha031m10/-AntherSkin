@@ -1,0 +1,43 @@
+.hero-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f8e8e8;
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    animation: fadeIn 1.5s ease;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    color: #c94c4c;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .hero-image {
+    width: 45%;
+    border-radius: 1rem;
+    transition: transform 0.5s ease;
+  }
+  
+  .hero-image:hover {
+    transform: scale(1.05);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

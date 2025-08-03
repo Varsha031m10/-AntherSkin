@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #ffe6f0; /* Pastel pink background */
+}
+
+.checkout-container {
+  background-color: #ffffff;
+  padding: 2rem;
+  max-width: 500px;
+  margin: 4rem auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.checkout-title {
+  text-align: center;
+  color: #e091a5;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-input,
+.checkout-textarea {
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #fff9fb;
+}
+
+.checkout-button {
+  padding: 1rem;
+  background: linear-gradient(135deg, #f8b7c4, #f6d6e0); /* Soft pastel gradient */
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
+  box-shadow: 0 4px 8px rgba(248, 183, 196, 0.4);
+}
+
+.checkout-button:hover {
+  background: linear-gradient(135deg, #f49cad, #fbdde6); /* Slight shift */
+  transform: scale(1.03);
+  box-shadow: 0 6px 14px rgba(248, 183, 196, 0.5);
+}
+
+.checkout-button:disabled {
+  background: #f8d7df;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.error-message {
+  background-color: #ffe6e6;
+  color: #cc0000;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

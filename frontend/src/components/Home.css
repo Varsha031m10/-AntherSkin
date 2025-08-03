@@ -1,0 +1,69 @@
+/* src/components/Home.css */
+
+.home-container {
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    justify-content: space-between; /* Space between the two sections */
+    padding: 20px; /* Add some padding */
+}
+
+.info-section {
+    flex: 1; /* Takes up 1 part of the space */
+    margin-right: 20px; /* Adds space between the text and image */
+}
+
+.image-section {
+    flex: 1; /* Takes up 1 part of the space */
+}
+
+.about-image {
+    max-width: 100%; /* Ensures the image does not overflow */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Optional: Rounds the corners of the image */
+}
+/* src/components/Home.css */
+
+.home-container {
+    display: flex;
+    align-items: flex-start; /* Align items to the start (top) */
+    justify-content: space-between; /* Space between the two sections */
+    padding: 20px; /* Add some padding */
+    opacity: 0; /* Start with opacity 0 for the animation */
+    animation: fadeIn 0.5s forwards; /* Apply fade-in animation */
+}
+
+.info-section {
+    flex: 1; /* Takes up 1 part of the space */
+    margin-right: 20px; /* Adds space between the text and image */
+    animate: slideIn 0.9s ease; /* Optional: You can add slide animation */
+}
+
+.image-section {
+    flex: 1; /* Takes up 1 part of the space */
+}
+
+.about-image {
+    max-width: 100%; /* Ensures the image does not overflow */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Optional: Rounds the corners of the image */
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Optional additional animation */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,64 @@
+/* OrderSuccess.css */
+.success-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: #fff0f5; /* light pastel pink background */
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .success-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    animation: scaleIn 0.6s ease;
+  }
+  
+  .success-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .success-title {
+    font-size: 28px;
+    color: #d63384;
+    margin-bottom: 15px;
+  }
+  
+  .success-message {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .success-footer {
+    font-style: italic;
+    color: #888;
+    font-size: 16px;
+  }
+  
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.85);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
